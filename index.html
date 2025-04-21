@@ -308,6 +308,16 @@
 
     <script src="script.js"></script>
     <script>
+
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+
+        // Ensure scroll to top even if page is loaded from cache
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        
         const form = document.getElementById('contactForm');
         const formStatus = document.getElementById('formStatus');
         
