@@ -874,6 +874,7 @@ footer::before {
     height: 100vh;
     overflow: hidden;
     background-color: #000;
+    padding-top: 80px;
 }
 
 .hero-video .hero-image {
@@ -903,7 +904,7 @@ footer::before {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 80px 20px 20px;
 }
 
 .badge {
@@ -1010,6 +1011,14 @@ footer::before {
     
     .badge {
         font-size: 0.8rem;
+    }
+
+    .hero-video {
+        padding-top: 60px;
+    }
+
+    .video-overlay {
+        padding: 60px 20px 20px;
     }
 }
 
