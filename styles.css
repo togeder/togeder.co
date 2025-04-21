@@ -290,6 +290,50 @@ nav .container {
     box-shadow: var(--box-shadow);
 }
 
+.video-container video::-webkit-media-controls {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-timeline {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-current-time-display {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-timeline-container {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-toggle-closed-captions-button {
+    display: none !important;
+}
+
+.video-container video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+
 /* Features Section */
 .features {
     padding: 8rem 0;
@@ -392,128 +436,142 @@ nav .container {
 
 @media (max-width: 768px) {
     .hero {
-        padding: 6rem 0 3rem;
+        padding: 4rem 0 2rem;
     }
 
     .hero h1 {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
     }
 
     .hero .subtitle {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
     }
 
     .section-header h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
     }
 
     .section-subtitle {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
     }
 
     .pain-points h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
     }
 
     .pain-point h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
     }
 
     .pain-point p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .feature-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
     }
 
     .feature-card p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .faq-item h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .faq-answer p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .contact-info h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
     }
 
     .primary-button, .secondary-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
     }
 
     .video-overlay h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
     }
 
     .video-overlay .subtitle {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
     }
 
     .demo-section {
-        padding: 3rem 0;
+        padding: 2.5rem 0;
     }
 
     .demo-section .section-header h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .demo-section .section-subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .features {
-        padding: 3rem 0;
+        padding: 2.5rem 0;
     }
 
     .faq {
-        padding: 3rem 0;
+        padding: 2.5rem 0;
     }
 
     .contact {
-        padding: 3rem 0;
+        padding: 2.5rem 0;
     }
 
     .container {
-        padding: 0 15px;
+        padding: 0 12px;
+    }
+}
+
+/* Additional media query for very small devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.6rem;
     }
 
-    .pain-points h2,
-    .solution h2,
-    .features .section-header h2 {
-        font-size: 2.25rem;
+    .hero .subtitle {
+        font-size: 0.85rem;
     }
-    
-    .pain-points-grid,
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+
+    .section-header h2 {
+        font-size: 1.3rem;
     }
-    
-    .features-highlight {
-        flex-direction: column;
-        align-items: center;
+
+    .section-subtitle {
+        font-size: 0.85rem;
     }
-    
-    .pain-point,
-    .feature-card {
-        padding: 2rem;
+
+    .primary-button, .secondary-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .video-overlay h1 {
+        font-size: 1.6rem;
+    }
+
+    .video-overlay .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 }
 
