@@ -391,6 +391,109 @@ nav .container {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .pain-points h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .pain-point h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .pain-point p {
+        font-size: 0.9rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .primary-button, .secondary-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .video-overlay h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .video-overlay .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .demo-section {
+        padding: 3rem 0;
+    }
+
+    .demo-section .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .demo-section .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .features {
+        padding: 3rem 0;
+    }
+
+    .faq {
+        padding: 3rem 0;
+    }
+
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
     .pain-points h2,
     .solution h2,
     .features .section-header h2 {
