@@ -58,7 +58,7 @@
                 <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
                     <li><a href="https://docs.togeder-ai.com" target="_blank">Documentation</a></li>
-                    <li><a href="https://togeder-ai.com" target="_blank" class="cta-button">Link To Platform</a></li>
+                    <li><a href="https://zoom.us/oauth/authorize?response_type=code&client_id=83CD3pSsTbaKW12K0cgPjQ&redirect_uri=https://togeder-ai.com/backend-api/zoom/oauth/redirect" target="_blank" class="cta-button">Link To Platform</a></li>
                 </ul>
             </div>
         </nav>
@@ -316,16 +316,49 @@
         </div>
     </div>
 
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to improve your experience and analyze site usage. Read our <a href="https://docs.togeder-ai.com/privacy_policy.html" style="color: var(--primary-color);" target="_blank">Privacy Policy</a> for more information.</p>
+        <div class="cookie-buttons">
+            <button class="accept-cookies" onclick="acceptCookies()">Accept</button>
+            <button class="decline-cookies" onclick="declineCookies()">Decline</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script>
-
         window.onload = function() {
             window.scrollTo(0, 0);
+            
+            // Check cookie consent status
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieBanner').classList.add('show');
+            }
         }
 
         // Ensure scroll to top even if page is loaded from cache
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').classList.remove('show');
+            // Initialize Google Analytics after consent
+            initializeGoogleAnalytics();
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').classList.remove('show');
+            // Optionally disable Google Analytics
+            window['ga-disable-G-VT7ZSTBY45'] = true;
+        }
+
+        function initializeGoogleAnalytics() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VT7ZSTBY45');
         }
         
         const form = document.getElementById('contactForm');
