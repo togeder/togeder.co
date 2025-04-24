@@ -1698,8 +1698,9 @@ footer::before {
 
 .cookie-banner p {
     margin: 0;
+    color: white;
     font-size: 0.9rem;
-    color: var(--secondary-color);
+    line-height: 1.5;
 }
 
 .cookie-banner .cookie-buttons {
