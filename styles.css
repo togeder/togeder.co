@@ -2238,3 +2238,133 @@ footer::before {
         font-size: 1.25rem;
     }
 }
+
+/* Blog Post Styles */
+.blog-post {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(180deg, white 0%, var(--light-gray) 100%);
+}
+
+.blog-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin: 1.5rem 0;
+    line-height: 1.2;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-subtitle {
+    font-size: 1.25rem;
+    color: #64748B;
+    margin-bottom: 2rem;
+}
+
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.blog-content h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 3rem 0 1.5rem;
+}
+
+.blog-content h2:first-child {
+    margin-top: 0;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem;
+}
+
+.blog-content p {
+    color: #64748B;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.blog-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.blog-content ul li {
+    color: #64748B;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.blog-content ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.blog-tags {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.tag:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 6rem 0 3rem;
+    }
+
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .blog-content {
+        padding: 2rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.25rem;
+    }
+}
