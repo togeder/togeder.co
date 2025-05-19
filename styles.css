@@ -2368,3 +2368,16 @@ footer::before {
         font-size: 1.25rem;
     }
 }
+
+.blog-image .blog-post-image {
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.blog-image {
+    height: auto !important;
+    overflow: visible !important;
+}
