@@ -2539,3 +2539,24 @@ footer::before {
         padding: 1.5rem;
     }
 }
+
+.conference-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.partner-logo {
+    max-height: 80px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
