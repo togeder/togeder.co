@@ -2272,7 +2272,6 @@ footer::before {
     background: white;
     padding: 3rem;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
 }
 
 .blog-content h2 {
