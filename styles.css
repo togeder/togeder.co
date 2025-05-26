@@ -334,26 +334,26 @@ nav .container {
     display: none !important;
 }
 
-/* Features Section */
-.features {
+/* solutions Section */
+.solutions {
     padding: 8rem 0;
     background: linear-gradient(180deg, var(--light-gray) 0%, white 100%);
     position: relative;
 }
 
-.features .section-header {
+.solutions .section-header {
     text-align: center;
     margin-bottom: 5rem;
 }
 
-.features .section-header h2 {
+.solutions .section-header h2 {
     font-size: 3rem;
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
     position: relative;
 }
 
-.features .section-subtitle {
+.solutions .section-subtitle {
     font-size: 1.25rem;
     color: #64748B;
     max-width: 800px;
@@ -361,14 +361,14 @@ nav .container {
     line-height: 1.6;
 }
 
-.features-grid {
+.solutions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     margin-top: 4rem;
 }
 
-.feature-card {
+.solutions-card {
     background: white;
     border-radius: var(--border-radius);
     padding: 2.5rem;
@@ -381,7 +381,7 @@ nav .container {
     gap: 1.5rem;
 }
 
-.feature-card::before {
+.solutions-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -393,16 +393,16 @@ nav .container {
     transition: var(--transition);
 }
 
-.feature-card:hover {
+.solutions-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-.feature-card:hover::before {
+.solutions-card:hover::before {
     opacity: 1;
 }
 
-.feature-icon {
+.solutions-icon {
     width: 50px;
     height: 50px;
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(96, 165, 250, 0.1) 100%);
@@ -415,20 +415,20 @@ nav .container {
     transition: var(--transition);
 }
 
-.feature-card:hover .feature-icon {
+.solutions-card:hover .solution-icon {
     background: var(--gradient-primary);
     color: white;
     transform: rotate(-5deg);
 }
 
-.feature-content h3 {
+.solutions-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
-.feature-content p {
+.solutions-content p {
     color: #64748B;
     line-height: 1.6;
     margin: 0;
@@ -473,12 +473,12 @@ nav .container {
         font-size: 0.85rem;
     }
 
-    .feature-card h3 {
+    .solutions-card h3 {
         font-size: 1.1rem;
         margin-bottom: 0.4rem;
     }
 
-    .feature-card p {
+    .solutions-card p {
         font-size: 0.85rem;
     }
 
@@ -522,7 +522,7 @@ nav .container {
         font-size: 0.9rem;
     }
 
-    .features {
+    .solutions {
         padding: 2.5rem 0;
     }
 
@@ -795,7 +795,7 @@ footer::before {
     }
 }
 
-.feature-card,
+.solutions-card,
 .testimonial-card,
 .step {
     animation: fadeInUp 0.8s ease-out forwards;
@@ -1252,7 +1252,7 @@ footer::before {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.feature-card {
+.solutions-card {
     transition: var(--transition);
     border: 1px solid rgba(0, 0, 0, 0.05);
     background: white;
@@ -1262,19 +1262,19 @@ footer::before {
     overflow: hidden;
 }
 
-.feature-card:hover {
+.solutions-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--box-shadow);
 }
 
-.feature-icon {
+.solutions-icon {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     transition: var(--transition);
 }
 
-.feature-card:hover .feature-icon {
+.solutions-card:hover .solutions-icon {
     transform: scale(1.1);
 }
 
@@ -1511,7 +1511,7 @@ footer::before {
     line-height: 1.6;
 }
 
-.features-highlight {
+.solutions-highlight {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1519,7 +1519,7 @@ footer::before {
     margin-top: 3rem;
 }
 
-.feature-tag {
+.solutions-tag {
     background: rgba(37, 99, 235, 0.1);
     color: var(--primary-color);
     padding: 1rem 2rem;
@@ -1532,11 +1532,11 @@ footer::before {
     gap: 0.75rem;
 }
 
-.feature-tag i {
+.solutions-tag i {
     font-size: 1.25rem;
 }
 
-.feature-tag:hover {
+.solutions-tag:hover {
     background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
@@ -1564,7 +1564,7 @@ footer::before {
 .section-header h2,
 .pain-points h2,
 .solution h2,
-.features h2,
+.solutions h2,
 .faq h2,
 .demo-section h2 {
     font-size: 2.5rem;
@@ -1582,7 +1582,7 @@ footer::before {
 .section-header h2::after,
 .pain-points h2::after,
 .solution h2::after,
-.features h2::after,
+.solutions h2::after,
 .faq h2::after,
 .demo-section h2::after {
     content: '';
@@ -1668,7 +1668,7 @@ footer::before {
     .section-header h2,
     .pain-points h2,
     .solution h2,
-    .features h2,
+    .solutions h2,
     .faq h2,
     .demo-section h2 {
         font-size: 2rem;
