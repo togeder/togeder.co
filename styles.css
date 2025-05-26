@@ -415,7 +415,7 @@ nav .container {
     transition: var(--transition);
 }
 
-.solutions-card:hover .solution-icon {
+.solutions-card:hover .solutions-icon {
     background: var(--gradient-primary);
     color: white;
     transform: rotate(-5deg);
